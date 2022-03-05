@@ -69,7 +69,8 @@
     "build": "webpack-cli && webpack-cli -p",
     "demo": "cd demo && webpack-cli && \"../node_modules/.bin/webpack-dev-server\" --port 4000 --content-base dist/",
     "prepublishOnly": "npm run build && bash lib/copy_bundles.sh",
-    "prepare": "npm run prepublishOnly"
+    "prepare": "npm run prepublishOnly",
+    "prepublish": "npm run prepublishOnly"
   },
   "repository": {
     "type": "git",
